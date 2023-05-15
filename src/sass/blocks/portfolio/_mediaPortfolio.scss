@@ -1,0 +1,23 @@
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .portfolio {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 280px);
+            grid-auto-rows: 280px;
+            justify-content: space-around;
+            row-gap: 30px;
+            .horizontal, .vertical {
+                grid-row: unset;
+                grid-column: unset;
+            }
+
+        }
+    }
+}

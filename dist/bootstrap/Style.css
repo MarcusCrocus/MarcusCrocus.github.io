@@ -1,0 +1,63 @@
+.navbar {
+	background-color: #4747ab;
+	font-size: 20px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: blue;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: blue;
+}
+
+.carousel-inner {
+	height: 90vh;
+}
+
+.carousel-caption {
+	top:50%;
+	transform: translateY(-50%);
+	background: rgb(71, 71, 171, 0.5); /*0.5 - opacity*/
+	bottom: initial;
+}
+
+.card {
+	margin: 50px;
+}
+
+.row{
+	margin-top: 50px;
+}
+footer {
+  background-color:#4747ab;
+  padding: 3%;
+  color:white;
+  margin-top: 50px; 
+}
+.fab {
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.fab:hover { /*менбетси цвет при наведении*/
+  color: #d6cdcd;
+
+}

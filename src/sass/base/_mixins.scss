@@ -1,0 +1,41 @@
+@mixin before_circle {
+    &:before {
+        content: '';
+        position: absolute;
+        width: 46px;
+        height: 46px;
+        border-radius: 100%;
+        background: $main-color;
+
+        z-index: -1;
+        top: -42%;
+        left: 96px;
+    }
+}
+@mixin before_circle2 {
+    &:before {
+        content: '';
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        border-radius: 100%;
+        background: $main-color;
+        z-index: -1;
+        top: 2px;
+        left: -2px;
+    }
+}
+/* @mixin botton {
+    &::before {
+    content: '';
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        border-radius: 100%;
+        background: $main-color;
+        z-index: -1;
+        top: 2px;
+        left: -2px;
+    }
+    
+} */

@@ -1,0 +1,82 @@
+.resume {
+    padding-top: 120px;
+    background: url(../img/man-1292269_1920.jpg)center 50% / cover;
+    &__wrapper{
+        padding: 60px 0 60px;
+        display: grid;
+        grid-template-columns: repeat(2, 452px);
+        column-gap: 97px;
+        justify-content: center;
+    }
+    &__column {
+        &-title {
+            padding-left: 35px;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                height: 15px;
+                width: 15px;
+                background: $main-color;
+                border: 1px solid #000;
+                border-radius: 100%;
+                left: -7px;
+                top: 50%;
+                transform: translateY(-50%);
+                
+            }
+        }
+        ul {
+            list-style-type: none;
+            li {
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 1px;
+                    height: calc(100% + 16px);
+                    top: -16px;
+                    left: 0;
+                    background-color: black;
+
+                }
+            }
+        }
+    }
+    &__item {
+        position: relative;
+        &::before {
+            content: '';
+            height: 1px;
+            width: 43px;
+            position: absolute;
+            background-color:black;
+            margin-top: 28px;
+        }
+        &-head {
+            position: relative;
+            padding: 6px 0 0 100px;
+        }
+        &-location {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &-body {
+            padding-left: 43px;
+            margin-top: 12px;
+            text-align: justify;
+        }
+        &-icon {
+            position: absolute;
+            top: 8px;
+            left: 43px;
+            z-index: 2;
+            @include before_circle2;
+            img {
+                position: absolute;
+                left: 17px;
+                top: 14px;
+            }
+        }
+    }
+}

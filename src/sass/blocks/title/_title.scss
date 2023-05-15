@@ -1,0 +1,81 @@
+.title {
+    color: rgb(21, 153, 230);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 60px;
+    &_fz14 {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    &_fz16 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &_fz20 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    &_fz36{
+        font-size: 36px;
+    }
+    &_fz48 {
+        font-size: 48px;
+        -webkit-text-stroke: 1px black;
+    }
+    &__section-title {
+        position: relative;
+        text-align: center;
+        @include before_circle2;
+        &:before {
+            top: -3px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__section-subtitle{
+        text-align: center;
+        margin-left: 10px;
+    }
+}
+.about {
+    &__title {
+        position: relative;
+        @include before_circle2;
+        padding: 1px 0 0 12px;
+        z-index: 2;
+        color:$main-color;
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    }
+    &__subtitle {
+        color: $main-color;
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    }
+}
+.resume {
+    &__title {
+        position: relative;
+        text-align: center;
+        z-index: 2;
+        @include before_circle2;
+        &::before {
+            top: -5px;
+            left: 45%;
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+}
+.contacts {
+    &__title {
+        position: relative;
+        z-index: 2;
+        padding: 1px 0 0 12px;
+        @include before_circle2;
+        &:before {
+            top: -4px;
+            left: 0%;
+        }
+    }
+}
+

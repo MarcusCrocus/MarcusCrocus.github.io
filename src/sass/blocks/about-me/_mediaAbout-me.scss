@@ -1,0 +1,109 @@
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1140px;
+    }
+    .about {
+        &__wrapper {
+            justify-content: center;
+            grid-template-columns: 400px 525px;
+            column-gap: 70px;
+        }
+        &__skills {
+            column-gap: 30px;
+            margin: -4px;
+            &-item {
+                grid-template-columns: 19px 180px;
+            }
+        }
+        
+    }    
+}
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .about {
+        &__wrapper {
+            grid-template-columns: 369px 520px;
+            gap: 40px;
+            
+        }
+        &__skills {
+            &-circle{
+                &::before {
+                    left: -14px;
+                }
+            }
+            &-item{
+                grid-template-columns: 26px 179px;
+                column-gap: 15px;
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .about {
+        &__photo {
+            object-fit: cover;
+            grid-row: 1/2;
+        }
+        &__skills {
+            grid-column: 1/3;
+            &-item {
+                grid-template-columns: 38px 237px;
+            }    
+        }
+        &__subtitle {
+            font-size: 24px;
+        }
+        &__wrapper {
+            grid-template-columns: 317px 355px;
+            gap: 37px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .about {
+        padding-top: 40px;
+        &__photo {
+            grid-row: unset;
+        }
+        &__skills {
+            justify-content: center;
+            grid-column: auto;
+            grid-template-columns: 380px;
+            grid-auto-rows: minmax(115px, auto);
+            
+        }
+        &__wrapper {
+            justify-content: center;
+            grid-template: 465px auto auto / 540px;
+            grid-auto-rows: auto;
+        }
+    }
+      
+}
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .about {
+        &__wrapper {
+            justify-content: center;
+            grid-template: 340px auto auto / 291px;
+        }
+        &__skills {
+            grid-template-columns: 1fr;
+            &-item {
+                grid-template-columns: 38px 169px;
+            }
+        }
+    }
+}
